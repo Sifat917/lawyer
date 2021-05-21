@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #0b31a4;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(127, 193, 255);
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner h1{
+    
+color: white;
+    
+text-transform: uppercase;
+    
+font-size: 65px;
+    
+font-weight: 600;
+}
+.hg{
+    min-height: 90vh;
+    align-items: center;
+}
+.icon{
+    
+color: white;
+    
+font-size: 35px;
+    
+position: absolute;
+    
+left: 50%;
+    
+top: 75%;
+    
+transform: translateX(-50px);
+animation: updown 1s linear infinite;
+animation-direction:alternate ;
+}
+
+@keyframes updown{
+    0%{
+        top: 75%;
+    }
+    100%{
+        top: 80%;
+    }
+}
+
+.wwr{
+
+}
+.wwr span{
+    
+height: 5px;
+    
+width: 0px;
+    
+background: #FF3105;
+    
+display: inline-block;
+transition: .5s all ease-in-out;
+}
+.wwr h1{
+    
+font-size: 40px;
+    
+color: #0b31a4;
+    
+font-weight: 600;
+}
+.wwr p{
+    
+color: #adbbbd;
+}
+.wwr:hover span{
+    width: 50px;
+}
+.wwd{background-color: #fafcfc;text-align: center;background-image: url(../images/wwd_bg.png);background-repeat: no-repeat;background-position: right bottom;background-size: 1050px;}
+.heading{
+
+}
+.heading span{
+    height: 5px;
+    
+width: 0px;
+    
+background: #FF3105;
+    
+display: block;
+margin: auto;
+transition: .5s all ease-in-out;
+}
+.wwd:hover .heading span{
+    width: 50px;
+}
+.heading h1{
+    color: #0b31a4;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+}
+.img{
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    transition: .5s all ease-in-out;
+    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,7db9e8+0,7db9e8+0,1513b5+78&0+1,0+1,1+53 */
+background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(124,183,231,0) 1%, rgba(54,72,197,1) 53%, rgba(21,19,181,1) 78%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(124,183,231,0) 1%,rgba(54,72,197,1) 53%,rgba(21,19,181,1) 78%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(124,183,231,0) 1%,rgba(54,72,197,1) 53%,rgba(21,19,181,1) 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1513b5',GradientType=0 ); /* IE6-9 */
+
+}
+.img:hover::before{
+    height: 100%;
+}
+.text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.text h1{
+    color: white;
+    font-size: 30px;
+    
+}
+.img:hover .text{
+    opacity: 1;
+    top: 50%;
+}
+.img_icon{
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.img:hover .img_icon{
+    opacity: 1;
+    left: 50%;
+}
+.attorney{
+background-image: url(../images/oa_bg.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 100px 0px;
+}
+.attorney span{
+    height: 5px;
+    margin: 30px 0px;
+    width: 0px;
+    background: #FF3105;
+    display: block;
+    transition: .5s all ease-in-out;
+}
+.attorney:hover span{
+    width: 50px;
+}
+.attorney h1{
+    color: white;
+}
+.attorney p{
+    color: #4a59c7;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.attorney a{
+    color: #FF3105;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.name{
+    
+position: absolute;
+    
+left: 15%;
+    
+top: 75%;
+    
+color: white;
+opacity: 0;
+transition: .5s all ease-in-out;
+}
+.img:hover .name{
+top: 75%;
+opacity: 1;
+}
+.language:hover .heading span{
+width: 50px;
+}
+.language{
+
+}
+.language h2{
+    color: #0b31a4;
+    font-weight: 600;
+}
+.language p{
+    color: #adbbbd;
+}
+.language a{
+    color: #FF3105;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.contact{
+    background-color: #000da1;
+    padding-bottom: 70px;
+}
+.contact h1{
+    color: white;
+    font-weight: 600;
+}
+.contact:hover .heading span{
+    width: 50px;
+}
+form{
+
+}
+form input{
+background: transparent !important;
+border: none !important;
+border-bottom: 1px solid white !important;
+border-radius: 0% !important;
+caret-color: white !important;
+}
+form textarea{
+    background: transparent !important;
+border: none !important;
+border-bottom: 1px solid white !important;
+border-radius: 0% !important;
+caret-color: white !important;
+}
+form input:focus{
+    box-shadow: none !important;
+}
+form textarea:focus{
+    box-shadow: none !important;
+}
+form input::placeholder{
+    color: white !important;
+}
+form textarea::placeholder{
+    color: white !important;
+}
+form input[type="submit"]{
+    
+border: none !important;
+    
+color: white;
+    
+padding: 5px 60px;
+    
+background: #FF3105 !important;
+border: 1px solid #FF3105 !important;
+transition: .5s all ease-in-out;
+}
+form input[type="submit"]:hover{
+    background: transparent !important;
+}
+footer{
+    background: #02072e;
+    height: 130px;
+}
+footer p{
+    color: #4c5fd0;
+}
+.logo{
+    color: #b5c0f3;
+}
+.logo i{
+    
+margin-right: 15px;
+}
